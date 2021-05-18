@@ -1,3 +1,5 @@
+package com.string;
+
 public class MaxAndMinLenghString {
     public static void main(String[] args) {
         String str = "Hello this is successful string";

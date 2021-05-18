@@ -1,3 +1,5 @@
+package com.string;
+
 import org.junit.Test;
 
 import java.util.HashMap;
