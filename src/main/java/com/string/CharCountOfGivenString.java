@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-public class CharCount {
+public class CharCountOfGivenString {
     public static void main(String[] args) {
         String s ="abbcdaae";
         Set<Character> distinctEle1 = new HashSet<>();
