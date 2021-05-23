@@ -1,6 +1,5 @@
 package com.string;
 
-import org.junit.Test;
 
 public class PalindromWithReverseFun {
     public static void main(String[] args) {
