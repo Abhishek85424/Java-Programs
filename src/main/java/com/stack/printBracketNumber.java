@@ -2,7 +2,7 @@ package com.stack;
 
 import java.util.Stack;
 
-public class printBrackNumber {
+public class printBracketNumber {
     public static void main(String[] args) {
         String bracketStr = "[[][[[]]][][[[]]]]";
         int currentBracket = 1;
