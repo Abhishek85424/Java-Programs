@@ -2,6 +2,7 @@ package com.string;
 
 import org.junit.Test;
 
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -10,19 +11,27 @@ public class StringReverseSpecialChar {
     public void Testing()
     {
 //        Reverse a string with special character without changing special char position
+//        Output :    @kesi$hb
         String str ="@bhis$ek";
-        HashMap<Integer,Character> hm = new HashMap<>();
-        StringBuffer reverseString= new StringBuffer(str.length());
-
-        for(int index=str.length()-1;index>=0;index--)
+        char st[] = str.toCharArray();
+        int l=0, r = st.length-1;
+        while (l<r)
         {
-            if(!Character.isLetter(str.charAt(index)))
-           for(int key : hm.keySet())
-           {
-               reverseString.insert(key,hm.get(key));
-           }
+            if(!Character.isAlphabetic(st[l]))
+                l++;
+            else if(!Character.isAlphabetic(st[r]))
+                r--;
+            else
+            {
+                char temp = st[r];
+                st[r]=st[l];
+                st[l] = temp;
+                l++;
+                r--;
+            }
         }
-        System.out.println(String.format("Reveresed String %s",reverseString));
+        str = new String(st);
+        System.out.println(String.format("Reveresed String %s",str));
     }
 
 }
