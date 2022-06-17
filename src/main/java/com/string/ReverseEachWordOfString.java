@@ -13,5 +13,20 @@ public class ReverseEachWordOfString {
             revList.add(new StringBuffer(s).reverse().toString());
         }
         System.out.println(String.join(" ",revList));
+
+        // Another Approch
+        String strArr[];
+        strArr = str.split(" ");
+        int start = 0;
+        int end = strArr.length-1;
+        while (start < end)
+        {
+            String st = strArr[start];
+            strArr[start] = strArr[end];
+            strArr[end] = st;
+            start++;
+            end--;
+        }
+        System.out.println(String.join(" ",strArr));
     }
 }

@@ -2,10 +2,6 @@ package com.string;
 
 import org.junit.Test;
 
-import javax.swing.*;
-import java.util.HashMap;
-import java.util.Map;
-
 public class StringReverseSpecialChar {
     @Test
     public void Testing()

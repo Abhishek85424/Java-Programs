@@ -2,6 +2,7 @@ package com.number;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashSet;
 
 public class Number9Count {
     public static void main(String[] args) {
@@ -16,6 +17,9 @@ public class Number9Count {
             }
         }
         System.out.println(total9Count);
+        HashSet<String> hs = new HashSet<>();
+        hs.add("Hi");
+        hs.add("Hello");
 
     }
 }

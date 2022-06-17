@@ -18,9 +18,10 @@ public class NumberPalindrom {
 
 //        Another Way
         String numberStr = String.valueOf(number);
-        for(int index =0;index<numberStr.length()/2;index++)
+        int len = numberStr.length();
+        for(int index =0;index<len/2;index++)
         {
-            if(numberStr.charAt(index)!=numberStr.charAt(numberStr.length()-1-index))
+            if(numberStr.charAt(index)!=numberStr.charAt(len-1-index))
             {
                 isPalindrom = false;
                 break;
